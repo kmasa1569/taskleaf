@@ -61,14 +61,14 @@ describe 'タスク管理機能', type: :system do
       end
     end
 
-    # context '新規作成画面で名称を入力しなかったとき' do
-    #   let(:task_name) { '' }
+    context '新規作成画面で名称を入力しなかったとき' do
+      let(:task_name) { '' }
 
-    #   it 'エラーとなる' do
-    #     within '#error_explanation' do
-    #       expect(page).to have_content '名称を入力してください'
-    #     end
-    #   end
-    # end
+      it 'エラーとなる' do
+        within '#error_explanation' do
+          expect(page).to have_content '名称を入力してください'
+        end
+      end
+    end
   end
 end
